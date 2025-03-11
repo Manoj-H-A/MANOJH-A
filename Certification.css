@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(187, 25, 79);
+    border: 10% solid black;
+}
+#MANOJHA{
+    color: rgb(247, 243, 243);
+    font-size: larger;
+    text-align: center;
+
+}
+
+
+
+.class {
+    background-color: rgb(223, 241, 170);
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+body {
+    background-color: rgb(223, 241, 170);
+}
+
+.certificate {
+    text-align: center;
+}
+
+.image img {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 600px;       
+    height: auto;       
+}
+
+.certify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    display: block;
+}
+
+.home:hover {
+    background-color: yellow;
+    color: rgb(222, 5, 5);
+}
+
+.home {
+    margin-left: 50px;
+    font-size: large;
+}
+
+.home:active {
+    background-color: rgb(246, 9, 9);
+    color: white;
+    outline: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .image img {
+        width: 100%; 
+        margin-top: 40px;  
+        margin-bottom: 30px;  
+    }
+
+    .home {
+        margin-left: 20px;
+        font-size: medium; 
+    }
+}
+
+@media (max-width: 480px) {
+    .image img {
+        width: 100%; 
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .home {
+        margin-left: 10px;
+        font-size: small;
+    }
+}

@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to right, #87CEEB, #00BFFF);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.MANOJHA {
+    border: 8px solid black; 
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 60%;
+    background-color: white;
+}
+.MANOJHA h1 {
+    font-size: 30px;
+    color: black;
+}
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.about h1 {
+    font-size: 28px; 
+    font-weight: bold;
+}
+.about p {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+.nav {
+    list-style: none;
+    padding: 0;
+}
+.nav li {
+    margin: 15px 0;
+}
+.nav a {
+    display: block;
+    background-color: lightgray;
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out; 
+}
+.nav a:hover {
+    transform: scale(1.1); 
+    color: blue; 
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <style>
+        body {  
+            background: linear-gradient(to right, #87CEEB, #00BFFF);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: rgb(14, 13, 13);
+            font-size: 28px;
+            margin-top: 30px;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .project {
+            width: 45%;
+            text-align: center;
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            margin: 15px;
+        }
+        img {
+            width: 90%; 
+            max-width: 500px; 
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.05); 
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #d23600;
+        }
+       
+        .home-container {
+            text-align: center;
+            margin-top: 30px; 
+        }
+        .home-btn {
+            background: #ff6600;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+        .home-btn:hover {
+            background: #cc5500;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>PROJECTS</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Indoor Air Quality Monitoring System</h3>
+            <img src="C:\Users\ambig\Downloads\POSTER.jpeg" alt="Indoor Air Quality Monitoring System">
+            <br>
+            <a href="https://github.com/Manoj-H-A/INDOOR-AIR-QUALITY-MONITORING-SYSTEM" class="button" target="_blank">
+                INDOOR AIR QUALITY MONITORING SYSTEM (LINK)
+            </a>
+        </div>
+        
+        <div class="project">
+            <h3>Launching Machine</h3>
+            <img src="C:\Users\ambig\Downloads\LAUNCHING MACHINE.jpeg" alt="Launching Machine">
+            <br>
+            <a href="https://github.com/Manoj-H-A/LAUNCHING-MACHINE" class="button" target="_blank">
+                LAUNCHING MACHINE (LINK)
+            </a>
+        </div>
+    </div>
+
+    <div class="home-container">
+        <a href="index.html" class="home-btn">🏠 Home</a>
+    </div>
+
+</body>
+</html>

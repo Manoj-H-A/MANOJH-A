@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #87CEEB, #00BFFF);
+            color: rgb(16, 16, 16);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .icon {
+            background: rgb(222, 130, 245);
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }   
+        .icon img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
+        .icon:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+        }
+        .icon span {
+            margin-top: 5px;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .mobile {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .home-btn {
+            margin-top: 20px;
+            background: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .home-btn:hover {
+            background: #cc5500;
+        }
+        .mobile:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 6px 12px rgba(240, 6, 6, 0.945); 
+        }
+        @media (max-width: 375px) {
+            .icons {
+                flex-direction: column;  
+                align-items: center;
+                gap: 10px;
+            }
+            .icon {
+                width: 70px;
+                height: 70px;
+                padding: 10px;
+            }
+            .icon img {
+                width: 50px;
+                height: 50px;
+            }
+            .mobile {
+                font-size: 14px;
+                padding: 8px;
+            }
+            .home-btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CONTACT DETAILS</h1>
+        <div class="icons">
+            <a href="mailto:ambigermanoj768@gmail.com" class="icon">
+                <img src="C:\Users\ambig\Downloads\gmail.jpeg" alt="Gmail">
+                <span>Gmail</span>
+            </a>
+            <a href="https://www.linkedin.com/in/manoj-h-a-86b975279/" target="_blank" class="icon">
+                <img src="C:\Users\ambig\Downloads\linkdn.webp" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/manoj_ambiger_?utm_source=qr" target="_blank" class="icon">
+                <img src="C:\Users\ambig\Downloads\insta.webp" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="https://github.com/Manoj-H-A" target="_blank" class="icon">
+                <img src="C:\Users\ambig\Downloads\github.webp" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://x.com/ManojHA3860?t=1i-MSl4YwIVWVcVa8oMwvQ&s=09" target="_blank" class="icon">
+                <img src="C:\Users\ambig\Downloads\TWITTER.webp" alt="X / TWITTER">
+                <span>X / TWITTER</span>
+            </a>
+        </div>
+
+        <div class="mobile">
+            📞 <a href="tel:+917483642676" style="text-decoration: none; color: black; font-weight: bold;">Mobile: +91 74836 42676</a>
+        </div>
+        <a href="index.html" class="home-btn">🏠 Home</a>
+    </div>
+</body>
+</html>

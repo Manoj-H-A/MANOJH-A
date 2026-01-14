@@ -5,37 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANOJ H A</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Corrected rel -->
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #87CEEB, #00BFFF);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            color: rgb(247, 243, 243);
+            font-size: larger;
+            border: 5px solid rgb(10, 10, 10);
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgb(131, 2, 243);
+        }
+
+        .about {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .aboutme {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .nav li {
+            width: 90%;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav li:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(239, 3, 3, 0.955);
+        }
+
+        @media (max-width: 375px) {
+            header {
+                font-size: medium;
+                padding: 5px;
+            }
+
+            .image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .image:hover {
+                transform: scale(1.05);
+            }
+
+            .aboutme {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .nav li {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .nav a {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <header class="header">
-        <h1 class="fade-in">MANOJ H A</h1>
-        <p class="subtitle">Electronics & Communication Engineer</p>
+    <header>
+        <h1>MANOJ H A</h1>
     </header>
 
-    <section class="profile">
-        <img src="IMAGES/photoli.jpeg" alt="Profile Image" class="profile-img">
-    </section>
+    <!-- Corrected image path -->
+    <img class="image" src="IMAGES/photoli.jpeg" alt="Profile Image">
 
-    <section class="about slide-up">
+    <div class="about">
         <h2>About Me</h2>
-        <p>
+        <p class="aboutme">
             I am a passionate Electronics and Communication Engineering student with a strong interest
             in coding, problem-solving, and electronics. Proficient in C and Python, I enjoy tackling
             complex challenges through programming and expanding my knowledge in technology.
-            <br><br>
-            I have worked on projects involving microcontrollers, sensors, and actuators to build
-            innovative solutions. I am also a sports enthusiast, which has strengthened my strategic
-            thinking and decision-making abilities.
+            I have worked on various projects involving microcontrollers, integrating them with
+            actuators and other components to create innovative solutions.
+            Beyond academics, I am a sports enthusiast, which has helped me develop strategic thinking
+            and decision-making skills.
+            My ultimate goal is to become a problem solver, not only in the technical domain but also
+            in broader social contexts.
         </p>
-    </section>
+    </div>
 
     <ul class="nav">
-        <li><a href="certification.html">Certification</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="certification.html">CERTIFICATION</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
     </ul>
 
 </body>

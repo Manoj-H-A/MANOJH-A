@@ -1,42 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MANOJ H A</title>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Background */
+body {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
 
-    <header class="header">
-        <h1 class="fade-in">MANOJ H A</h1>
-        <p class="subtitle">Electronics & Communication Engineer</p>
-    </header>
+/* Header */
+.header {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: drop 1s ease;
+}
 
-    <section class="profile">
-        <img src="IMAGES/photoli.jpeg" alt="Profile Image" class="profile-img">
-    </section>
+.header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
 
-    <section class="about slide-up">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate Electronics and Communication Engineering student with a strong interest
-            in coding, problem-solving, and electronics. Proficient in C and Python, I enjoy tackling
-            complex challenges through programming and expanding my knowledge in technology.
-            <br><br>
-            I have worked on projects involving microcontrollers, sensors, and actuators to build
-            innovative solutions. I am also a sports enthusiast, which has strengthened my strategic
-            thinking and decision-making abilities.
-        </p>
-    </section>
+.subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+}
 
-    <ul class="nav">
-        <li><a href="certification.html">Certification</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+/* Profile Image */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 30px auto;
+    border: 5px solid white;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
-</body>
-</html>
+.profile-img:hover {
+    transform: scale(1.15) rotate(2deg);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* About Section */
+.about {
+    width: 85%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Navigation */
+.nav {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.nav li {
+    margin: 15px 0;
+}
+
+.nav a {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Animations */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade 1.5s ease-in;
+}
+
+.slide-up {
+    animation: drop 1.2s ease;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .nav a {
+        width: 90%;
+    }
+}
